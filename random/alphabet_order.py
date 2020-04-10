@@ -28,10 +28,7 @@ def solve(words):
 					break
 
 			if idx != -1:
-				subword1 = word1[idx:len(word1)]
-				subword2 = word2[idx:len(word2)]
-
-				pair = [subword1[0], subword2[0]]
+				pair = [word1[idx], word2[idx]]
 				if (pair[0] != pair[1]) & (pair not in pairs):
 					pairs.append(pair)
 
